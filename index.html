@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Example Match Page</title>
+</head>
+
+<!-- Clever scripts live here -->
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(function(){
+        $.getJSON('/api/example_api_single',function(data){
+            console.log('success');
+        }).error(function(){
+            console.log('error');
+        });
+    });
+</script>
+
+
+<body>
+
+<!-- Header --> 
+<div class="foreground" id="header_panel">
+	<p> Header </p>
+	<!-- Logo -->
+	<div id="Logo">
+	</div>
+
+	<!-- Title -->
+	<div id="logo_title">
+	</div>
+
+	<!-- fan_art -->
+	<div id="title_art">
+	</div>
+
+</div>
+
+<!-- Menu bar -->
+<div class="foreground" id="menu_panel">
+	<!-- Not sure how this is going to be structured or what menu option we will have on it -->
+	<p> Menu Bar </p>
+</div>
+
+<!-- Main info Panel -->
+<div class="foreground" id="top_info_panel">
+
+	<!-- Top left Panel -->
+	<div class="foreground top_panel" id="top_left_panel">
+
+		<!-- Net worth Holder -->
+		<div id="net_worth_holder">
+		</div>
+		
+	</div>
+
+	<!-- Top Middle Panel -->
+	<div class="foreground top_panel" id="top_middle_panel">
+		<!-- Time, score and Logos -->
+		<div class="foregound" id="time_score_logos">
+			<div id="radiant_logo">
+			</div>
+
+			<div id="radiant_score">
+			</div>
+			
+			<div id="timer">
+			</div>
+
+			<div id="dire_score">
+			</div>
+			
+			<div id="dire_logo">
+			</div>
+		</div>
+
+		<!-- Map -->
+		<div id="map_holder">
+
+		</div>
+
+		<!-- Gold diff graphic -->
+		<div id="gold_diff_holder">
+
+		</div>
+
+	</div>
+
+	<!-- Top right Panel -->
+	<div class="foreground top_panel" id="top_right_panel">
+
+		<!-- Gold graph graphic -->
+		<div id="gold_graph_holder">
+
+		</div>
+
+	</div>
+
+</div>
+
+<!-- Base Panel -->
+<div class="foreground" id="base_panel">
+	
+	<!-- Left hand side main panel -->
+	<div class="sub_main_panel" id="main_left_panel">
+
+	</div>
+
+	<!-- Middle main panel -->
+	<div class="main_panel" id="main_middle_panel">
+
+		<!-- Article holder -->
+		<div id="article_holder">
+		</div>
+
+	</div>
+
+	<!-- Right hand side main panel -->
+	<div class="sub_main_panel" id="main_right_panel">
+
+	</div>
+
+</div>
+
+</body>
+</html>
